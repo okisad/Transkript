@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+
+<hibernate-configuration>
+	<session-factory>
+	
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.pool_size">1</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+ 		<property name="hibernate.connection.url">jdbc:mysql://127.7.48.2:3306/trans</property> 
+ 		<property name="hibernate.connection.username">admin3utAptu</property>
+		<property name="hibernate.connection.password">fvYafV_hJdUf</property>
+		
+<!-- 		<property name="hibernate.connection.url">jdbc:mysql://localhost/trans</property> -->
+<!-- 		<property name="hibernate.connection.username">root</property> -->
+<!-- 		<property name="hibernate.connection.password">pass</property> -->
+		
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		<!-- <property name="hbm2ddl.auto">update</property>  -->
+		<!-- List of XML mapping files -->
+		<mapping class="com.entity.CourseDAO"/>
+		<mapping class="com.entity.UserDAO"/>
+		<mapping class="com.entity.School.Department"/>
+		<mapping class="com.entity.School.Faculty"/>
+		<mapping class="com.entity.School.Subject"/>
+		<mapping class="com.entity.School.Year"/>
+		
+		
+
+	</session-factory>
+</hibernate-configuration>
