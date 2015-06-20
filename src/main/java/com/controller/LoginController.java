@@ -21,6 +21,8 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 
+		System.out.println("girdi");
+		
 		PrintWriter out = resp.getWriter();
 
 		UserService userService = new UserServiceImp();
